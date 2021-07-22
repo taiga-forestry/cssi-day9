@@ -29,20 +29,33 @@
                         <input class="input is-medium is-rounded" type="text" placeholder="What's the passcode?" id="passcode" required />
                     </div>
                 </div>
-                <button class="button is-block is-fullwidth is-primary is-medium is-rounded" onclick="getMessages()">
-                    Click Here
+                <button class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit" id="viewMsg" onclick="getMessages()">
+                    Click Here!
                 </button>
             </form>
             <br>
             </div>
         </div>
+
         <section class="container">
-            <h2 id="message" class="subtitle is-4"></h2>
+            <article class="message is-dark is-hidden" id = "message">
+                <div class="message-header">
+                    <p>Secret Message!</p>
+                    <!-- <button class="delete" aria-label="delete"></button> -->
+                </div>
+
+                <div class="message-body" style = "font-size: 40">
+                    test 
+                </div>
+ 
+            </article>
+            <button class="button is-block is-fullwidth is-primary is-medium is-rounded is-hidden" type="submit" id="nextMsg" onclick="nextMessages()">
+                    Enter Another Message!
+            </button>
         </section>
 
     </section>
-    
-    <script src="js/viewMessages.js"></script>
+  <script src="js/viewMessages.js"></script>
   </body>
 
 </html>
